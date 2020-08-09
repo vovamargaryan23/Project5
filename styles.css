@@ -1,0 +1,500 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+
+.header-all{
+	background-image: url(imgs/header-bg.png);
+	width: 100%;
+	height: 48.8vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.header-upper{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2vw 6vw 0;
+	align-items:center;
+}
+.header-links > nav{
+	display: flex;
+	align-items: flex-start;
+}
+.header-link{
+	font-family: 'Quicksand', sans-serif;
+  font-size: 18pt;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 2vw;
+}
+.header-link:nth-child(2){
+	margin: 0 3vw 0 0;
+}
+.header-links > nav > a:last-child > img{
+	width: 2rem;
+}
+.header-logo > a > img{
+	width: 4rem;
+}
+.header-other{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    margin-top: 15vw;
+}
+.header-other > p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4vw;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.header-other > span{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.8vw;
+	width: 40vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.scroll-down{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7%;
+}
+.contain1-all{
+	width: 100%;
+	background-color: white;
+}
+.contain1-filter{
+  padding-bottom: 2.5vw;
+  background-color: #f5f6f7;
+
+}
+.contain1-filter > form{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 2vw 5vw 0;
+}
+.checkmarks {
+	font-family: 'Quicksand', sans-serif;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  margin: 0 2vw 0 0;
+  font-size: 16pt;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height:2;
+  letter-spacing: normal;
+}
+
+.checkmarks input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+   border:2px solid #cccccc;
+    border-radius: 3px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkmarks input:checked ~ .checkmark {
+  background-color: #ffffff;
+  border:2px solid #aa9b77;
+  border-radius: 3px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkmarks input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkmarks .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #aa9b77;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.submit > input{
+	outline: none;
+	border: none;
+  border-radius: 3px;
+  background-color: #aa9b77;
+  padding: 1.5rem 2.5rem;
+font-family: 'Quicksand', sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  cursor: pointer;
+}
+.men-txt{
+  font-size: 18pt;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-left: 5vw;
+  margin-top: 4vw;
+  position: relative;
+}
+.men-txt::after{
+  content:"";
+  width: 95%;
+  height: 3px;
+  position: absolute;
+  left:0;
+  top:50%;
+  background-color: #cccccc;
+}
+.men-txt > span{
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  padding-right: 50px;
+}
+.men-shirt{
+  width: 320px;
+  height:30%;
+  background-color: #f5f6f7;
+  text-align: center;
+  margin: 3vw 5vw;
+}
+.men-products{
+  display: flex;
+  justify-content:center;
+}
+.select-sizes > select{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15pt;
+  font-family: 'Quicksand', sans-serif;
+  font-stretch: normal;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: #f5f6f7;
+}
+.card-upper{
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+}
+.color-available:nth-child(1){
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #165eb9;
+  border-radius: 50%;
+}
+.color-available:nth-child(2){
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffe637;
+  border-radius: 50%;
+}
+.color-available:nth-child(3){
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #535253;
+  border-radius: 50%;
+}
+
+.card-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+}
+.card-image2 > img{
+  width: 28%;
+  margin-bottom: 20%;
+}
+.men-shirt:hover{
+  border: 5px solid #aa9b77;
+  cursor: pointer;
+}
+
+.select-sizes > p{
+  font-size: 15pt;
+  font-family: 'Quicksand', sans-serif;
+  font-stretch: normal;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: #f5f6f7;
+}
+.women-txt{
+  font-size: 18pt;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 5vw 0;
+  margin-left: 5vw;
+  position: relative;
+  text-align: right;
+}
+.women-txt::after{
+  content:"";
+  width: 91%;
+  height: 3px;
+  position: absolute;
+  left:0;
+  top:50%;
+  background-color: #cccccc;
+}
+.women-txt > span{
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  padding-right: 50px;
+}
+.women-shirt{
+  width: 320px;
+  height:30%;
+  background-color: #f5f6f7;
+  text-align: center;
+  margin: 3vw 5vw;
+}
+.women-products{
+  display: flex;
+  justify-content:center;
+}
+.select-sizes > select{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15pt;
+  font-family: 'Quicksand', sans-serif;
+  font-stretch: normal;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: #f5f6f7;
+}
+.card-upper{
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+}
+.color-available-woman:nth-child(1){
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #d3a7ac;
+  border-radius: 50%;
+}
+.color-available-woman:nth-child(2){
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.card-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+}
+
+.women-shirt:hover{
+  border: 5px solid #aa9b77;
+  cursor: pointer;
+}
+.dress-name{
+  font-size: 1vw;
+  font-weight: 700;
+  white-space: nowrap;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #aa9b77;
+  font-family: 'Quicksand', sans-serif;
+}
+.dress-price{
+  font-size: 1vw;
+  font-weight: 700;
+  font-stretch: normal;
+  white-space: nowrap;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #424242;
+  font-family: 'Quicksand', sans-serif;
+}
+.select-sizes > p{
+  font-size: 15pt;
+  font-family: 'Quicksand', sans-serif;
+  font-stretch: normal;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: #f5f6f7;
+}
+.card-image2-woman > img{
+  width: 55%;
+  margin-bottom: 30%;
+}
+.card-image > img{
+  width: 55%;
+}
+.contain2-all{
+  width: 100%;
+  background-color: #aa9b77;
+  padding: 2vw 25vw;
+  height: 402px;
+
+}
+fieldset {
+  border: 3px solid #918363;
+  color: #837659;
+  padding: 5vw;
+
+}
+.about-us{
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
+  font-size: 16pt;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #424242;
+}
+legend{
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
+  font-stretch: normal;
+  font-size: 20pt;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #837659;
+}
+.footer-all{
+  width: 100%;
+  background-color: #424242;
+  display: flex;
+  padding: 8vw 2vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info{
+  width: 30%;
+}
+.footer-info h1{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 25pt;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.footer-info p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.8vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer-nav-links ul{
+  list-style-type: none;
+  display: flex;
+}
+.footer-nav-links ul li a{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.2vw;
+}
